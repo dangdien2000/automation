@@ -1,11 +1,13 @@
- function getRandomIntInclusive(min, max) {
+function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+// create initial empty chart
 var ctx_live = document.getElementById("phcanvas");
 var myChart = new Chart(ctx_live, {
-  type: 'bar',
+  type: 'line',
   data: {
     labels: [],
     datasets: [{
@@ -47,7 +49,7 @@ var myChart = new Chart(ctx_live, {
     scales: {
       x: {
         display: true,
-        text: 'Values',
+        text: 'Value',
         title: {
           display: true,
           text:'',
@@ -82,11 +84,18 @@ var myChart = new Chart(ctx_live, {
   },
   }
 });
-setInterval(function() {
-  url= "IOServer.htm";
-  $.getJSON(url, function(data){
-    myChart.data.labels.push("");
-     myChart.data.datasets[0].data.push(getRandomIntInclusive(1, 1000));
+
+var getData = function() {
+  $.ajax({
+    url: "https://jsonplaceholder.typicode.com/todos/1",
+    success: function(data) {  
+    myChart.data.labels.push("# data ");
+    myChart.data.datasets[0].data.push(getRandomIntInclusive(2, 8));
     myChart.update();
-  })
-},3000);
+    }
+  });
+};
+
+// get new data every 3 seconds
+setInterval(getData, 3000);
+
