@@ -5,7 +5,7 @@
 }
 var ctx_live = document.getElementById("phcanvas");
 var myChart = new Chart(ctx_live, {
-  type: 'line',
+  type: 'bar',
   data: {
     labels: [],
     datasets: [{
