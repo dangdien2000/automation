@@ -86,7 +86,7 @@ setInterval(function() {
   url= "IOServer.htm";
   $.getJSON(url, function(data){
     myChart.data.labels.push("");
-    myChart.data.datasets[0].data.push(data["pHChart"]);
+     myChart.data.datasets[0].data.push(getRandomIntInclusive(1, 1000));
     myChart.update();
   })
 },3000);
