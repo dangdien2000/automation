@@ -222,7 +222,7 @@ var g6 = new JustGage({
   }}				
 
   setInterval(function() {
-  g1.refresh(getRandomInt(0, 100));
+  g1.refresh(getRandomInt(25, 55));
   g2.refresh(getRandomInt(0, 27648));
   g3.refresh(getRandomInt(0, 6000));
   g4.refresh(getRandomInt(0, 10000));
