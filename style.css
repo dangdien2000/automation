@@ -68,10 +68,11 @@ h1{
 }
 h2{
   color: #0f0f0f;
+  font-size: 1.4em;
 }
 h3{
    font-size: 1.2em;
-  color: red;
+  color: #a51313;
 }
 p{
   padding-left: 10px;
