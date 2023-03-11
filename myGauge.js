@@ -222,12 +222,12 @@ var g6 = new JustGage({
   }}				
 
   setInterval(function() {
-  //g1.refresh(getRandomInt(0, 100));
-  //g2.refresh(getRandomInt(0, 27648));
-  //g3.refresh(getRandomInt(0, 6000));
-  //g4.refresh(getRandomInt(0, 10000));
-  //g5.refresh(getRandomInt(0, 1000000));
-  //g6.refresh(getRandomInt(2, 8));
+  g1.refresh(getRandomInt(0, 100));
+  g2.refresh(getRandomInt(0, 27648));
+  g3.refresh(getRandomInt(0, 6000));
+  g4.refresh(getRandomInt(0, 10000));
+  g5.refresh(getRandomInt(0, 1000000));
+  g6.refresh(getRandomInt(2, 8));
 }, 5000); // update the charts every 5 seconds.
 
   function fn_ScreenChange(scr_1, scr_2, scr_3, scr_4, scr_5, scr_6, scr_7){
