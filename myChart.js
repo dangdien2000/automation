@@ -47,7 +47,7 @@ var myChart = new Chart(ctx_live, {
     scales: {
       x: {
         display: true,
-        text: 'Value',
+        text: 'Values',
         title: {
           display: true,
           text:'',
