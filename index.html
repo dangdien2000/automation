@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="raphael-2.1.4.min.js"></script>
+    <script src="justgage.js"></script>	
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="chart.js"></script>
+    <script src="clock.js"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>S7 1200 Webserver</title>
+</head>
+<body>
+    <a href="http://ddbluestar.com"><img src="images/logo.png" alt="" width="auto" height="auto"></a>
+    <h1>System Monitoring From Web Browser</h1>
+    <h3>Siemens PLC s7 1200</h3>
+    <div id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Project</a></li>
+            <!--<li><a href="me.html">About me</a></li>-->
+      </ul>
+    </div>
+   </div>
+    <div class="wrapper">
+        <div class="time__wrapper ">
+          <span class="text__color" id="time"></span>
+          <span class="text__color" id="sec"></span>
+          <span class="text__color" id="med"></span>
+        </div>
+        <div class="day__wrapper">
+          <span class="text__color">SUN</span>
+          <span class="text__color">MON</span>
+          <span class="text__color">TUE</span>
+          <span class="text__color">WED</span>
+          <span class="text__color">THU</span>
+          <span class="text__color">FRI</span>
+          <span class="text__color">SAT</span>
+        </div>
+        <span class="text__color" id="full__date"></span>
+      </div>
+      
+      <table class="center">
+        <tr>
+          <td>
+            <div class="cart_main">
+              <img src="images/tem.png"/>
+              <div class="temperature">Temperature</div>
+            </div>
+          </td>
+          <td>
+            <div class="cart_main">
+              <img src="images/ana.png"/>
+              <div class="temperature">Analog Input Value</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td id="g1" class="gauge"></td>
+          <td id="g2" class="gauge"></td>   
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart_main">
+              <img src="images/dri.png"/>
+              <div class="temperature">Drive Frequency</div>
+              <h3 style="margin-left: 10px;background-color: yellow;" id="Status_Run">Stop</h3>
+            </div>
+            
+          </td>
+          <td>
+            <div class="cart_main">
+              <img src="images/ope.png"/>
+              <div class="temperature">Operating Time </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td id="g3" class="gauge"></td>
+          <td id="g4" class="gauge"></td>
+        </tr>
+
+        <tr>
+          <td>
+            
+              <div class="cart_main">
+                <img src="images/pph.png"/>
+                <div class="temperature">pH Value<h3 id="pH_Value"></h3> </div>
+              </div>
+            
+          </td>
+          <td>
+            <div class="cart_main">
+              <img src="images/wat.png"/>
+              <div class="temperature">Water Consumption</div>
+            </div>
+          </td>
+         
+        </tr>
+
+        <tr>
+          <td id="g6" class="gauge"></td>
+          <td id="g5" class="gauge"></td>
+        </tr>
+      </table>
+
+      
+        <img src="images/cha.png"/>
+        <div class="temperature">Chart </div>
+      
+  <canvas id="phcanvas"></canvas>
+ 
+    <div id = "copywrite">
+      <div id="nav">
+        <ul>
+          <li><a href=""></a>@ 2023</li>
+          <li><a href="https://locnuoctienthanh.net">Tien Thanh Co., Ltd</a></li>
+          <li><a href="https://www.facebook.com/diendang2000" class="fa fa-facebook"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCJnzYI3u-KXmIDGMxt952gQ" class="fa fa-youtube"></a></li>
+         
+        </ul>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="myGauge.js"></script>
+    <script src="myChart.js"></script> 
+</body>
+
+</html>

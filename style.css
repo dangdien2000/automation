@@ -1,0 +1,198 @@
+@font-face {
+  font-family: Digital-7 Mono;
+  src: url(https://drive.google.com/file/d/184we4e_GM5t7_wrY_gpvGDVp91iYwbEl/view?usp=sharing);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 10vh;
+  display: grid;
+  place-items: center;
+  font-family: Digital-7 Mono;
+  background-color: #eceaea;
+ 
+  //background-image: url(https://images.unsplash.com/photo-1491378630646-3440efa57c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80);
+}
+.text__color {
+  
+  background: linear-gradient(to bottom, #2980b9, #0782f5);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.time__wrapper {
+  position: relative;
+  
+}
+#time {
+ 
+  text-shadow: 0 0 55px #2980b9;
+  font-size: 2rem;
+
+}
+#med {
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  left: 130px;
+  font-size: 1.8rem;
+  color: #bb0000;
+}
+#sec {
+  font-size: 1.4rem;
+}
+.day__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.day__wrapper span {
+  font-size: .9rem;
+  opacity: 0.4;
+  font-weight: 600;
+}
+#full__date {
+  font-size: 1.7rem;
+}
+#phcanvas{
+  width: 60vh;
+}
+#table, tr, th{
+  color: #ad0808;
+
+}
+h1{
+  color: #080808;
+  font-size: 1.6em;
+}
+h2{
+  color: #0f0f0f;
+}
+p{
+  padding-left: 10px;
+  padding-bottom: 6px;
+}
+.gauge{
+  padding-top: 0px;
+  background-color: #eceaea;
+  height: 140px;
+}
+table{
+margin-bottom: 10px;
+}
+table td h2{
+  text-align: center;
+  color: #ec0a0a;
+}
+table td{
+  color: #c20a0a;
+  
+}
+
+table, th, td {
+  //border:1px solid black;
+  text-align: center;
+}
+#Temp_Value, #Drive_Frequency, #Analog_Value, #Operation_Hour, #pH_Value, #Water_Consumption{
+color: #af1515;
+}
+
+#nav, #feature, #footer {
+  margin: 1% 0%;
+}
+
+ul {
+  text-align: center;
+}
+li {
+  display: inline;
+  padding: 1px;
+}
+.count-title {
+  font-size: 15px;
+  color: #ff695f;
+  padding-top: 10px;
+}
+.section-heading h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #2a2a2a;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  position: relative;
+  z-index: 2;
+  line-height: 44px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.section-heading h2 em {
+  font-style: normal;
+  color: #03a4ed;
+}
+
+.section-heading h2 span {
+  color: #ff695f;
+  font-weight: 700;
+  opacity: 1;
+  text-transform: capitalize;
+}
+
+.section-heading span {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff695f;
+  opacity: 0.15;
+}
+.count-title .icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+}
+.fa {
+  padding: 6px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.cart_main{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+.temperature{
+  color:#0d0e0d;
+  //text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart_main header{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+
