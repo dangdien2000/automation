@@ -1,3 +1,8 @@
+ function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 var ctx_live = document.getElementById("phcanvas");
 var myChart = new Chart(ctx_live, {
   type: 'line',
