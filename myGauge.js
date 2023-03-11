@@ -188,7 +188,7 @@ var g6 = new JustGage({
   decimals: 3,
   //symbol: '',
   label:'2.00-8.00',
-  textRenderer: customValueg6,
+  //textRenderer: customValueg6,
   pointer: true,
   pointerOptions: {
     toplength: 18,
